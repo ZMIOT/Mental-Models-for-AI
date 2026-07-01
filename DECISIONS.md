@@ -200,3 +200,26 @@
   - `GLOSSARY.md`
   - `Chapter01_SPEC.md`
   - `Chapter01_TEACHING_DESIGN.md`
+
+## ADR-010: 采用 GitHub Issue 作为 Codex 与 ChatGPT 的中转层
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 用户不希望继续在 Codex 和 ChatGPT 网页端之间复制长文本。
+  - 当前没有 OpenAI API key，因此不能使用 API Author Agent。
+  - GitHub 已经是项目事实来源的一部分，适合承载设计评审时间线。
+- 决策:
+  - 采用 GitHub Issue 作为 Codex 与 ChatGPT 的中转层。
+  - Codex 负责创建 Author Review Issue 和拉取 Issue 评论。
+  - ChatGPT 网页端负责围绕 Issue 进行结构化作者评审。
+  - Issue 评论必须先被 Codex 消化为仓库文件，不能直接进入正文。
+- 影响:
+  - 新增 `AGENT_COMMUNICATION.md`。
+  - 新增 GitHub Issue 模板和 `Scripts/github_issue_bridge.mjs`。
+  - 后续 Chapter 01 Draft Gate 评审应优先走 GitHub Issue。
+- 相关文件:
+  - `AGENT_COMMUNICATION.md`
+  - `Scripts/github_issue_bridge.mjs`
+  - `.github/ISSUE_TEMPLATE/author_review.yml`
+  - `CODEX_TASKS.md`

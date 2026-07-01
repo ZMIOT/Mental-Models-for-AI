@@ -12,6 +12,7 @@
 | 教学检查清单 | Ready | `Teaching_Checklist.md` 已建立 Phase 1 到 Phase 6 检查项。 |
 | 语言规范 | Ready | 已确立中文优先，专用术语可保留英文。 |
 | 一句话心智模型 | Ready | `ONE_LINE_MENTAL_MODELS.md` 已建立，Chapter 01 已确认。 |
+| Agent 通信协议 | Ready | `AGENT_COMMUNICATION.md` 和 GitHub Issue Bridge 已建立。 |
 | 知识图谱 | Draft | 已建立核心链路，后续随章节迭代。 |
 | 术语表 | Draft | 已建立首批核心术语。 |
 | 案例库 | Draft | 已建立工业 3D 视觉案例种子。 |

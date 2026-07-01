@@ -36,6 +36,7 @@ ChatGPT 是项目的 Lead Author，负责内容方向与教学质量。
 - 学习路线设计
 - 输出 `WEB_CHAT_BRIEF.md` 追加内容
 - 输出 `CODEX_TASKS.md` 任务草案
+- 通过 GitHub Issue 回复 Author Review
 
 不负责：
 
@@ -58,6 +59,7 @@ Codex 是项目的 Project Maintainer，负责仓库维护与执行。
 - 更新目录与状态
 - 维护 Mermaid 图和图示占位
 - 更新 `CODEX_REPORT.md`
+- 创建和读取 Author Review Issue
 - 提交并推送 Git commit
 
 不负责：
@@ -88,7 +90,8 @@ Codex 是项目的 Project Maintainer，负责仓库维护与执行。
 12. `WEB_CHAT_BRIEF.md`: ChatGPT 最新讨论沉淀。
 13. `CODEX_TASKS.md`: Codex 当前执行任务。
 14. `CODEX_REPORT.md`: Codex 执行回写。
-15. 章节正文和其他辅助材料。
+15. `AGENT_COMMUNICATION.md`: Codex 与 ChatGPT 的 Issue 中转协议。
+16. 章节正文和其他辅助材料。
 
 冲突不能静默处理。发现冲突时，必须在相关输出中说明冲突位置，并提出需要更新的文件。
 
@@ -103,6 +106,30 @@ Codex 是项目的 Project Maintainer，负责仓库维护与执行。
 7. Codex 更新 `STATUS.md`、`CODEX_REPORT.md`、必要时更新 `DECISIONS.md` 和 `CHANGELOG.md`。
 8. Codex 提交并推送 Git commit。
 9. ChatGPT 读取最新仓库状态继续评审。
+
+## GitHub Issue 中转流程
+
+当需要 ChatGPT 网页端参与，但不希望用户复制大段内容时，使用 GitHub Issue 中转：
+
+```text
+Codex
+↓
+Author Review Issue
+↓
+ChatGPT 网页端回复 Issue
+↓
+Codex 拉取 Issue 评论
+↓
+Codex 消化并更新仓库
+```
+
+规则：
+
+- Codex 负责创建 Issue 和拉取回复。
+- ChatGPT 负责在 Issue 中按指定格式回复。
+- 用户只需要把 Issue 链接交给 ChatGPT，或在 ChatGPT 中打开该 Issue。
+- Issue 回复不能直接进入正文，必须先经过 `WEB_CHAT_BRIEF.md`、`CODEX_TASKS.md`、`DECISIONS.md` 或对应设计文件。
+- 具体协议见 `AGENT_COMMUNICATION.md`。
 
 ## 语言规范
 
@@ -247,6 +274,7 @@ Codex 执行任务时必须：
 - 不把写作规范重复复制到多个文件。
 - 不直接创建正式章节，除非对应 `ChapterNN_SPEC.md` 已经 Ready。
 - 不把临时回答直接写成正文；必须先进入 Teaching Design。
+- 不把 GitHub Issue 评论直接复制进正文；必须先消化成项目文件。
 - 任务完成后更新 `CODEX_TASKS.md` 状态。
 - 重要架构决策写入 `DECISIONS.md`。
 - 项目版本演进写入 `CHANGELOG.md`。

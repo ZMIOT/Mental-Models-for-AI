@@ -165,3 +165,30 @@ Final
 - 确认 Chapter 01 Draft Gate。
 - 决定 Coverage 图示采用临时黑白方格还是正式插图。
 - 决定 Sidebar 和“为什么人类不需要 Dataset？”在正文中的准确位置。
+
+## 2026-07-01 GitHub Issue Bridge 报告
+
+### 完成内容
+
+- 创建 `AGENT_COMMUNICATION.md`，定义 Codex 与 ChatGPT 的 GitHub Issue 中转协议。
+- 创建 `Bridge/` 本地中转目录。
+- 创建 `Prompts/github_issue_author_review.md`。
+- 创建 `.github/ISSUE_TEMPLATE/author_review.yml`。
+- 创建 `Scripts/github_issue_bridge.mjs`。
+- 更新 `PROJECT_CHARTER.md`、`README.md` 和 `CHATGPT_HANDOFF_PROMPT.md`。
+- 新增 ADR-010、V0.6 版本记录、`Task 019` 和 `Task 020`。
+
+### 使用方式
+
+设置 `GITHUB_TOKEN` 后，可运行：
+
+```powershell
+node Scripts/github_issue_bridge.mjs create --prompt Bridge/to_chatgpt/current_prompt.md --title "Author Review: Chapter 01 Draft Gate" --labels author-review,needs-chatgpt,chapter-01,draft-gate
+node Scripts/github_issue_bridge.mjs fetch --issue 12
+```
+
+### 当前限制
+
+- 当前本机尚未设置 `GITHUB_TOKEN`，所以还不能实际创建 Issue。
+- 该方案不需要 OpenAI API。
+- ChatGPT 网页端仍需要能够打开 GitHub Issue 并在其中回复，或由用户将 Issue 链接交给 ChatGPT。

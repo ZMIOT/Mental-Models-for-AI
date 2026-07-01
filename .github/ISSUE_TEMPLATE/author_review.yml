@@ -1,0 +1,65 @@
+name: Author Review
+description: Request a Lead Author review from ChatGPT.
+title: "Author Review: "
+labels:
+  - author-review
+  - needs-chatgpt
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this issue when Codex needs ChatGPT to review curriculum, chapter specs, teaching design, or draft gates.
+  - type: textarea
+    id: review_goal
+    attributes:
+      label: 评审目标
+      description: What should ChatGPT decide or review?
+      placeholder: 请以 Lead Author 身份评审 Chapter 01 Draft Gate。
+    validations:
+      required: true
+  - type: textarea
+    id: context_files
+    attributes:
+      label: 必读文件
+      description: List repository files ChatGPT should read first.
+      placeholder: |
+        - PROJECT_CHARTER.md
+        - CURRICULUM.md
+        - Chapter01_TEACHING_DESIGN.md
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: 需要判断的问题
+      description: Specific questions for ChatGPT.
+      placeholder: |
+        1. Draft Gate 是否可以通过？
+        2. Sidebar 应该放在哪里？
+    validations:
+      required: true
+  - type: textarea
+    id: output_format
+    attributes:
+      label: 输出格式
+      description: Required structure for the ChatGPT reply.
+      value: |
+        请按以下结构输出：
+
+        ### Design Review
+
+        ### Accepted Decisions
+
+        ### Requested Changes
+
+        ### Draft Gate
+
+        - 状态: Ready | Needs Revision | Blocked
+        - 原因:
+
+        ### WEB_CHAT_BRIEF.md 追加内容
+
+        ### CODEX_TASKS.md 任务草案
+    validations:
+      required: true
+

@@ -1,0 +1,7 @@
+to_chatgpt/*.md
+from_chatgpt/*.md
+state/*.json
+!to_chatgpt/.gitkeep
+!from_chatgpt/.gitkeep
+!state/.gitkeep
+

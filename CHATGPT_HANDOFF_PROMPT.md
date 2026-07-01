@@ -27,6 +27,7 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 15. WEB_CHAT_BRIEF.md
 16. CODEX_TASKS.md
 17. CODEX_REPORT.md
+18. AGENT_COMMUNICATION.md
 
 你的职责：
 
@@ -51,6 +52,7 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 - 不要把 Idea 直接写成 Book Content。任何内容都先经过 Idea -> Teaching Design -> Book Content -> Review。
 - 每章教学设计先回答三个问题：改变哪个错误认知、一年后希望读者记住哪句话、读者获得什么能力。
 - 每章一句话心智模型必须同步到 ONE_LINE_MENTAL_MODELS.md。
+- 如果当前上下文来自 GitHub Issue，请直接在 Issue 中回复结构化评审，不要要求用户手动搬运长文本。
 
 输出要求：
 

@@ -92,6 +92,21 @@
 - 将 Dataset vs DataLoader 改为 Sidebar，而不是正文主线。
 - 将 Chapter 01 状态更新为 Teaching Design Review。
 
+## [V0.6] - 2026-07-01
+
+### Added
+
+- 新增 `AGENT_COMMUNICATION.md`，定义 Codex 与 ChatGPT 的 GitHub Issue 中转协议。
+- 新增 `Scripts/github_issue_bridge.mjs`，支持创建 Author Review Issue 和拉取 Issue 评论。
+- 新增 `.github/ISSUE_TEMPLATE/author_review.yml`。
+- 新增 `Bridge/` 本地中转目录。
+- 新增 `Prompts/github_issue_author_review.md`。
+
+### Changed
+
+- 将 GitHub Issue 中转流程写入 `PROJECT_CHARTER.md`、`README.md` 和 `CHATGPT_HANDOFF_PROMPT.md`。
+- 新增 `Task 019` 和 `Task 020`。
+
 ## 版本记录模板
 
 ```text

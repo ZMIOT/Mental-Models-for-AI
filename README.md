@@ -21,6 +21,7 @@ ChatGPT 作为 Lead Author，负责教学设计、知识体系、心智模型、
 - `CODEX_TASKS.md`: Codex 下一步需要执行的明确任务。
 - `CODEX_REPORT.md`: Codex 完成任务后的回写报告，供 ChatGPT 继续评审。
 - `CHATGPT_HANDOFF_PROMPT.md`: 可复制到 ChatGPT 网页端的项目启动提示词。
+- `AGENT_COMMUNICATION.md`: Codex 与 ChatGPT 通过 GitHub Issue 协作的中转协议。
 - `STATUS.md`: 章节和仓库状态。
 
 ## 标准工作流
@@ -31,6 +32,25 @@ ChatGPT 作为 Lead Author，负责教学设计、知识体系、心智模型、
 4. Codex 读取 `PROJECT_CHARTER.md`、`BOOK_BIBLE.md`、`CURRICULUM.md`、`KNOWLEDGE_MAP.md`、`WEB_CHAT_BRIEF.md` 和 `CODEX_TASKS.md` 后修改仓库。
 5. Codex 更新 `STATUS.md` 和 `CODEX_REPORT.md`，并提交 commit。
 6. ChatGPT 读取仓库最新状态继续评审。
+
+## GitHub Issue 中转
+
+当前推荐的 Codex 与 ChatGPT 沟通方式：
+
+```text
+Codex 创建 Author Review Issue
+ChatGPT 在 Issue 中回复结构化评审
+Codex 拉取 Issue 评论并消化到仓库
+```
+
+本地桥接脚本：
+
+```powershell
+node Scripts/github_issue_bridge.mjs create --prompt Bridge/to_chatgpt/current_prompt.md --title "Author Review: Chapter 01 Draft Gate" --labels author-review,needs-chatgpt,chapter-01,draft-gate
+node Scripts/github_issue_bridge.mjs fetch --issue 12
+```
+
+详见 `AGENT_COMMUNICATION.md`。
 
 ## 章节开发阶段
 
@@ -81,6 +101,10 @@ Review
 ├── CODEX_TASKS.md
 ├── CODEX_REPORT.md
 ├── COLLABORATION_GUIDE.md
+├── AGENT_COMMUNICATION.md
+├── Bridge/
+├── Prompts/
+├── .github/
 ├── Chapters/
 ├── Figures/
 ├── Experiments/
