@@ -81,13 +81,14 @@ Codex 是项目的 Project Maintainer，负责仓库维护与执行。
 5. `GLOSSARY.md`: 术语唯一解释。
 6. `CASE_LIBRARY.md`: 工业案例库。
 7. `ChapterNN_SPEC.md`: 单章规格，定义本章目标、边界和学习结果。
-8. `Chapter_Template.md`: 正式章节骨架。
-9. `Teaching_Checklist.md`: 教学质量检查清单。
-10. `STATUS.md`: 章节和项目状态。
-11. `WEB_CHAT_BRIEF.md`: ChatGPT 最新讨论沉淀。
-12. `CODEX_TASKS.md`: Codex 当前执行任务。
-13. `CODEX_REPORT.md`: Codex 执行回写。
-14. 章节正文和其他辅助材料。
+8. `ONE_LINE_MENTAL_MODELS.md`: 每章一句话心智模型。
+9. `Chapter_Template.md`: 正式章节骨架。
+10. `Teaching_Checklist.md`: 教学质量检查清单。
+11. `STATUS.md`: 章节和项目状态。
+12. `WEB_CHAT_BRIEF.md`: ChatGPT 最新讨论沉淀。
+13. `CODEX_TASKS.md`: Codex 当前执行任务。
+14. `CODEX_REPORT.md`: Codex 执行回写。
+15. 章节正文和其他辅助材料。
 
 冲突不能静默处理。发现冲突时，必须在相关输出中说明冲突位置，并提出需要更新的文件。
 
@@ -149,6 +150,8 @@ Review
 1. 这一章最想改变读者的哪个错误认知？
 2. 如果读者一年后只记住一句话，希望是哪一句？
 3. 这一章结束后，读者应该获得什么能力？
+
+第二个问题的答案必须同步到 `ONE_LINE_MENTAL_MODELS.md`。
 
 每章教学设计固定顺序：
 

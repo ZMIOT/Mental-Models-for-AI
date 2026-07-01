@@ -12,6 +12,7 @@ ChatGPT 作为 Lead Author，负责教学设计、知识体系、心智模型、
 - `BOOK_BIBLE.md`: 写作宪法，定义风格、章节模板和质量标准。
 - `CURRICULUM.md`: 课程地图，定义分卷结构、章节顺序和章节边界。
 - `Chapter01_SPEC.md`: Chapter 01 的章节规格，定义目标、边界和学习结果。
+- `ONE_LINE_MENTAL_MODELS.md`: 每章一句话心智模型，维护全书最重要的长期记忆句。
 - `Chapter_Template.md`: 所有正式章节的共用 Markdown 模板。
 - `Teaching_Checklist.md`: 每章进入发布前的教学质量检查清单。
 - `DECISIONS.md`: 长期架构和教学决策记录。
@@ -66,6 +67,7 @@ Review
 ├── CURRICULUM.md
 ├── Chapter01_SPEC.md
 ├── Chapter01_TEACHING_DESIGN.md
+├── ONE_LINE_MENTAL_MODELS.md
 ├── Chapter_Template.md
 ├── Teaching_Checklist.md
 ├── AUTHOR.md

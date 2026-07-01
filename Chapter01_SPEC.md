@@ -33,7 +33,7 @@ Dataset 是 AI 与真实世界的第一层接口。
 - 解释 Dataset 为什么是 AI 的经验集合。
 - 区分“有很多数据”和“有好的 Dataset”。
 - 判断一个 Dataset 是否覆盖真实工业现场。
-- 理解 Coverage 对现场泛化能力的影响。
+- 理解 Coverage（经验覆盖）对现场泛化能力的影响。
 - 发现 Dataset 中的采样偏差、场景缺失和边界条件缺失。
 - 为一个工业 3D 视觉任务设计 Dataset 的基本结构。
 - 理解为什么现场失败常常不是 DataLoader 问题。
@@ -82,16 +82,13 @@ Dataset = AI 的人生经历。
 
 ## Industrial 3D Vision Anchor
 
-候选主案例：
+主案例：
 
-- 点云缺陷检测 Dataset。
-- 结构光测量异常 Dataset。
-- 抓取位姿估计 Dataset。
-- RGBD 工件识别 Dataset。
+- 一台稳定运行三个月的焊接机器人，被搬到另一条生产线后，准确率从 99% 下降到 60%。
 
 推荐主线：
 
-> 一个模型在实验室测试很好，但到现场后遇到反光、遮挡、不同批次工件、夹具变化和点云缺失就失败。问题不是模型突然变笨，而是它的人生经历里没有这些现场情况。
+> 一台模型、相机、机器人和标定都正常的系统，在换线后突然失效。故事开始时不揭示原因，只让读者追问：到底是谁变了？
 
 ## Concepts Introduced
 
@@ -102,19 +99,19 @@ Dataset = AI 的人生经历。
 | Feature | 只做铺垫，不展开 |
 | Label | 只做铺垫，不展开 |
 | Distribution | 只做铺垫，后续章节展开 |
-| Coverage | 系统讲解为 Dataset 质量核心 |
+| Coverage | 系统讲解为 Dataset 质量核心；首次写作 Coverage（经验覆盖），不翻译为“覆盖率” |
 | Generalization | 只建立直觉，后续章节展开 |
 
 ## Suggested Section Intent
 
-1. 故事：现场模型失败来自没见过真实变化。
+1. 故事：悬疑式 Hook，焊接机器人搬线后突然失效。
 2. 问题：Dataset 到底是不是“越多越好”？
 3. 历史背景：从规则系统到数据驱动系统，经验变成核心资产。
 4. 心智模型：Dataset 是 AI 的人生经历。
 5. 图解：真实世界到 Dataset 的采样过程。
-6. 数学直觉：覆盖范围比单纯数量更重要。
+6. 数学直觉：Coverage（经验覆盖）比单纯数量更重要。
 7. 最小代码：用简单样本分布展示训练范围和测试范围不一致。
-8. 工业 3D 视觉案例：点云缺陷检测或结构光异常。
+8. 工业 3D 视觉案例：焊接机器人换线失效。
 9. 常见失败案例：实验室成功，现场失败。
 10. AI 实验：改变 Dataset 覆盖范围观察模型行为。
 11. Mini Project：为一个缺陷检测任务设计 Dataset 清单。
@@ -124,15 +121,17 @@ Dataset = AI 的人生经历。
 
 ## Open Questions
 
-- 第一章主案例最终选择点云缺陷检测，还是结构光测量异常？
-- 是否在本章引入 Coverage 的中文固定译名？
-- 是否需要把 Dataset 和 DataLoader 的区别作为一个小节？
+- Coverage（经验覆盖）的图示是否采用黑白方格。
+- 是否将“为什么人类不需要 Dataset？”作为独立二级小节。
+- Dataset vs DataLoader 的 Sidebar 放在正文哪个位置。
 
 ## Ready Criteria
 
 - 章节边界清楚，不和 Chapter 02 Sample 重叠。
 - 主案例已确定。
 - 核心类比已确定。
+- 一句话心智模型已确定。
+- Coverage（经验覆盖）术语使用已确定。
 - 本章新增术语已同步到 `GLOSSARY.md`。
 - 本章知识关系已同步到 `KNOWLEDGE_MAP.md`。
 - 章节设计遵守中文优先原则，除 Dataset、Sample、Feature、Coverage 等专用术语外，不使用不必要的英文。

@@ -19,13 +19,14 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 7. CASE_LIBRARY.md
 8. Chapter01_SPEC.md
 9. Chapter01_TEACHING_DESIGN.md
-10. Chapter_Template.md
-11. Teaching_Checklist.md
-12. DECISIONS.md
-13. STATUS.md
-14. WEB_CHAT_BRIEF.md
-15. CODEX_TASKS.md
-16. CODEX_REPORT.md
+10. ONE_LINE_MENTAL_MODELS.md
+11. Chapter_Template.md
+12. Teaching_Checklist.md
+13. DECISIONS.md
+14. STATUS.md
+15. WEB_CHAT_BRIEF.md
+16. CODEX_TASKS.md
+17. CODEX_REPORT.md
 
 你的职责：
 
@@ -49,6 +50,7 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 - 如果发现文档冲突，请先指出冲突文件和冲突内容，不要静默合并。
 - 不要把 Idea 直接写成 Book Content。任何内容都先经过 Idea -> Teaching Design -> Book Content -> Review。
 - 每章教学设计先回答三个问题：改变哪个错误认知、一年后希望读者记住哪句话、读者获得什么能力。
+- 每章一句话心智模型必须同步到 ONE_LINE_MENTAL_MODELS.md。
 
 输出要求：
 

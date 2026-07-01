@@ -159,3 +159,44 @@
   - `Chapter01_TEACHING_DESIGN.md`
   - `Teaching_Checklist.md`
   - `CHATGPT_HANDOFF_PROMPT.md`
+
+## ADR-008: 每章维护一句话心智模型
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 本书希望成为十年后仍然值得读的教材。
+  - 每章需要一个能长期留在读者记忆中的核心句。
+  - 这句话不是总结，而是章节灵魂。
+- 决策:
+  - 每章必须设计一句话心智模型。
+  - 一句话心智模型统一维护在 `ONE_LINE_MENTAL_MODELS.md`。
+  - 正文、故事、图示、实验和总结都应该服务这句话。
+- 影响:
+  - Chapter 01 确认为：AI 从来没有见过世界，它只见过 Dataset。
+  - Chapter 02、Chapter 03、Chapter 04 先记录 Proposed 版本。
+  - 新建章节 Spec 时必须同步检查一句话心智模型。
+- 相关文件:
+  - `ONE_LINE_MENTAL_MODELS.md`
+  - `Chapter01_TEACHING_DESIGN.md`
+  - `PROJECT_CHARTER.md`
+
+## ADR-009: Coverage 采用“经验覆盖”解释，不翻译为覆盖率
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - “覆盖率”容易让读者误以为 Coverage 是数量比例。
+  - 工业 Dataset 的关键不是数据条数，而是真实世界变化空间是否被采样到。
+- 决策:
+  - Coverage 第一次出现写作 `Coverage（经验覆盖）`。
+  - 后续统一简称 Coverage。
+  - 不将 Coverage 翻译为“覆盖率”。
+- 影响:
+  - `GLOSSARY.md` 更新 Coverage 解释。
+  - Chapter 01 需要专门说明 Coverage 不是数量，而是世界采样。
+  - Coverage 图示将成为全书可复用图示。
+- 相关文件:
+  - `GLOSSARY.md`
+  - `Chapter01_SPEC.md`
+  - `Chapter01_TEACHING_DESIGN.md`

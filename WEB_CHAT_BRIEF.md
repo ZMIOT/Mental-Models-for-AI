@@ -179,6 +179,49 @@ ChatGPT 网页端每次讨论结束后，将结果写入本文件。Codex 不需
 - Coverage 是否需要固定中文译名。
 - 是否将 Dataset 和 DataLoader 的区别作为 Chapter 01 的小节。
 
+## 2026-07-01 Chapter 01 Design Review 摘要
+
+### 今天讨论了什么
+
+- 对 `Chapter01_TEACHING_DESIGN.md` 进行了出版标准的 Design Review。
+- 确认主案例采用“焊接机器人搬到另一条产线后准确率从 99% 下降到 60%”。
+- 确认开场使用悬疑 Hook，不提前揭示 Dataset。
+- 讨论并固定 Coverage 的表达方式。
+- 讨论 Dataset vs DataLoader 是否进入正文。
+- 提出新增“为什么人类不需要 Dataset？”小节。
+- 提出每章都应有一句话心智模型。
+
+### 已达成共识
+
+- 主案例保留工业真实感，但改为悬疑叙事。
+- Coverage 首次写作 `Coverage（经验覆盖）`，之后统一简称 Coverage，不翻译为“覆盖率”。
+- Dataset vs DataLoader 不放正文主线，只作为作者旁白 Sidebar。
+- Chapter 01 前 5 页不出现 Dataset 正式定义。
+- 正式定义必须在读者已经需要它的时候出现。
+- Chapter 01 一句话心智模型是：AI 从来没有见过世界，它只见过 Dataset。
+
+### 修改了哪些理念
+
+- 开场从“解释原因”改为“制造悬疑”。
+- Coverage 从普通术语提升为本书可反复引用的核心概念。
+- 章节定义从开头移到推导之后。
+- 一句话心智模型从 Chapter 01 局部设计升级为全书统一机制。
+
+### 新增想法
+
+- 新增 `ONE_LINE_MENTAL_MODELS.md`。
+- Chapter 02 候选一句话：Sample 不是世界，它只是世界的一次观察。
+- Chapter 03 候选一句话：AI 看到的不是图片，而是模式。
+- Chapter 04 候选一句话：Label 不是答案，而是人类对世界的解释。
+- Coverage 图示可以使用真实世界方格与 Dataset 方格对比。
+
+### 待解决问题
+
+- Coverage 图示最终采用黑白方格，还是后续设计正式插图。
+- Sidebar 放在正式正文的哪个位置。
+- “为什么人类不需要 Dataset？”作为独立二级小节，还是融入心智模型部分。
+- 是否可以进入 Phase 3 Draft。
+
 ## 追加模板
 
 ```text

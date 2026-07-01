@@ -136,3 +136,32 @@ Final
 - 评审 `Chapter01_TEACHING_DESIGN.md`。
 - 确认主案例、开场故事、Coverage 译名和是否加入 Dataset/DataLoader 区分小节。
 - 评审通过后，再决定是否进入 Phase 3 Draft。
+
+## 2026-07-01 Chapter 01 Design Review 吸收报告
+
+### 完成内容
+
+- 更新 `Chapter01_TEACHING_DESIGN.md`，吸收 Design Review。
+- 更新 `Chapter01_SPEC.md`，同步主案例、Coverage 和 Draft Gate。
+- 更新 `GLOSSARY.md`，固定 `Coverage（经验覆盖）`。
+- 新增 `ONE_LINE_MENTAL_MODELS.md`，维护每章一句话心智模型。
+- 更新 `CASE_LIBRARY.md`，新增并选定“焊接机器人换线失效”案例。
+- 更新 `PROJECT_CHARTER.md`、`Teaching_Checklist.md`、`Chapter_Template.md`、`README.md` 和 `CHATGPT_HANDOFF_PROMPT.md`，加入一句话心智模型规则。
+- 新增 `Task 017` 和 `Task 018`。
+- 新增 ADR-008、ADR-009 和 V0.5 版本记录。
+
+### 关键评审结论
+
+- Chapter 01 主案例：焊接机器人搬线后准确率从 99% 下降到 60%。
+- 开场方式：悬疑 Hook，不提前揭示 Dataset。
+- Coverage：首次写作 `Coverage（经验覆盖）`，之后简称 Coverage，不翻译为“覆盖率”。
+- Dataset vs DataLoader：不放正文主线，改为作者旁白 Sidebar。
+- 新增小节：为什么人类不需要 Dataset？
+- 定义策略：前 5 页不出现 Dataset 正式定义，先让读者自己需要这个定义。
+- 一句话心智模型：AI 从来没有见过世界，它只见过 Dataset。
+
+### 下一步建议
+
+- 确认 Chapter 01 Draft Gate。
+- 决定 Coverage 图示采用临时黑白方格还是正式插图。
+- 决定 Sidebar 和“为什么人类不需要 Dataset？”在正文中的准确位置。

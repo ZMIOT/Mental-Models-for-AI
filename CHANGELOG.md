@@ -76,6 +76,22 @@
 - 将 Chapter 01 状态从 Spec Draft 更新为 Teaching Design。
 - 更新 `CHATGPT_HANDOFF_PROMPT.md`，要求网页端 ChatGPT 判断内容能否进入书，而不是直接回答问题。
 
+## [V0.5] - 2026-07-01
+
+### Added
+
+- 新增 `ONE_LINE_MENTAL_MODELS.md`，维护每章一句话心智模型。
+- 在 `CASE_LIBRARY.md` 中新增并选定“焊接机器人换线失效”主案例。
+- 在 `DECISIONS.md` 中新增 ADR-008 和 ADR-009。
+
+### Changed
+
+- 更新 `Chapter01_TEACHING_DESIGN.md`，吸收 Design Review。
+- 将 Chapter 01 开场改为悬疑 Hook，不提前揭示 Dataset。
+- 将 Coverage 固定为 `Coverage（经验覆盖）`，不翻译为“覆盖率”。
+- 将 Dataset vs DataLoader 改为 Sidebar，而不是正文主线。
+- 将 Chapter 01 状态更新为 Teaching Design Review。
+
 ## 版本记录模板
 
 ```text
