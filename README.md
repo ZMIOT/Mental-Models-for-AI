@@ -10,6 +10,7 @@
 - `WEB_CHAT_BRIEF.md`: ChatGPT 网页讨论后的结构化摘要。
 - `CODEX_TASKS.md`: Codex 下一步需要执行的明确任务。
 - `CODEX_REPORT.md`: Codex 完成任务后的回写报告，供 ChatGPT 继续评审。
+- `CHATGPT_HANDOFF_PROMPT.md`: 可复制到 ChatGPT 网页端的项目启动提示词。
 - `STATUS.md`: 章节和仓库状态。
 
 ## 标准工作流
@@ -43,4 +44,3 @@
 ├── References/
 └── Scripts/
 ```
-
