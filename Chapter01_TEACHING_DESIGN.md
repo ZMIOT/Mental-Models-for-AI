@@ -51,6 +51,8 @@ Review
 
 这不是章节总结，而是整章的灵魂。正文、图示、故事、实验和结尾都应该服务这句话。
 
+本章只保留这一句作为唯一 One-line Mental Model。正文中可以有其他精彩句子，但不能出现另一个竞争性的核心观点。
+
 ## 本章结束后读者应该获得的能力
 
 读者不只是“知道 Dataset 是什么”，而是能够：
@@ -219,15 +221,49 @@ Dataset B
 
 这可以成为全书反复引用的核心图示。
 
+图示阶段策略：
+
+- Phase 2 使用 ASCII 黑白方格验证教学逻辑。
+- Phase 3 Draft 继续使用可修改的 ASCII 图，不锁定视觉设计。
+- Phase 5 Technical Review 再统一设计正式插图。
+
+分工：
+
+- ASCII 图负责验证教学逻辑。
+- 正式插图负责提升阅读体验。
+
 ## 作者旁白：Dataset vs DataLoader
 
 不把 Dataset vs DataLoader 放入正文主线。
+
+推荐插入位置：
+
+```text
+故事
+↓
+心智模型
+↓
+Dataset 概念建立
+↓
+Sidebar: Dataset vs DataLoader
+↓
+继续正文
+```
+
+也就是说，Sidebar 应该放在正文第一次建立 Dataset 概念之后。
+
+不要放在：
+
+- 章节末尾。
+- 代码部分。
+- 本章开头。
 
 原因：
 
 - 第一章讲 Mental Model，不讲 PyTorch。
 - DataLoader 会把读者带入框架管道，打断世界观建立。
 - 正文必须保持聚焦：世界、经验、采样、Coverage。
+- 读者第一次建立 Dataset 概念时，最容易把它和 DataLoader 混在一起，此时插入 Sidebar 认知成本最低。
 
 建议放在 Sidebar：
 
@@ -247,7 +283,15 @@ DataLoader 回答的是：这些数据如何送到 GPU。
 
 ## 为什么人类不需要 Dataset？
 
-本节建议加入 Chapter 01 正文。
+本节作为独立二级小节加入 Chapter 01 正文。
+
+不要把它融入心智模型部分。
+
+原因：
+
+- 它承担的是建立人与 AI 的认知差异。
+- 它不是单纯解释 Dataset。
+- 它是本章从“Dataset 是经验”走向“AI 没有生活”的重要转折点。
 
 核心问题：
 
@@ -265,6 +309,26 @@ DataLoader 回答的是：这些数据如何送到 GPU。
 - AI 没有生活。
 - AI 不会自然走进工厂、摸过工件、看过产线变化。
 - AI 的全部世界经验，只能来自 Dataset。
+
+推荐镜像结构：
+
+```text
+人
+↓
+生活
+↓
+经验
+↓
+世界模型
+
+AI
+↓
+Dataset
+↓
+经验
+↓
+世界模型
+```
 
 本节作用：
 
@@ -355,6 +419,34 @@ DataLoader 回答的是：这些数据如何送到 GPU。
 - 前 5 页不出现 Dataset 的正式定义，定义延后到读者已经需要它的时候。
 - 教学流是否通过 `Teaching_Checklist.md` 的 Phase 2 检查。
 
+## Draft Gate Review 2026-07-01
+
+状态：Needs Revision。
+
+原因：
+
+- Teaching Design 已达到较高成熟度。
+- 但进入 Draft 前，必须先完成四项设计修订。
+
+要求修订：
+
+1. 明确 Coverage 图示采用 ASCII 黑白方格验证方案，正式插图后置。
+2. 固定 Dataset vs DataLoader Sidebar 的插入位置。
+3. 将“为什么人类不需要 Dataset？”升级为独立二级小节。
+4. 明确本章唯一 One-line Mental Model，避免正文出现多个竞争性核心观点。
+
+当前处理结果：
+
+- 已明确 Coverage 图示阶段策略。
+- 已固定 Sidebar 插入位置。
+- 已确认“为什么人类不需要 Dataset？”为独立二级小节。
+- 已确认唯一 One-line Mental Model。
+
+后续动作：
+
+- 需要再次进行 Draft Gate Review。
+- 在 Draft Gate 重新确认 Ready 前，不进入 Phase 3 Draft。
+
 ## 当前建议
 
 推荐主案例：
@@ -390,6 +482,10 @@ DataLoader 回答的是：这些数据如何送到 GPU。
 - Dataset vs DataLoader 的 Sidebar 处理已确认。
 - “为什么人类不需要 Dataset？”已确认加入设计。
 - 正式定义延后出现已确认。
+- Coverage ASCII 验证、正式插图后置已确认。
+- Sidebar 插入位置已确认。
+- “为什么人类不需要 Dataset？”独立二级小节已确认。
+- 唯一 One-line Mental Model 已确认。
 - 教学流已确认。
 - 实验方向已确认。
 - 不和 Chapter 02 Sample、Chapter 03 Feature、Chapter 04 Label 重叠。

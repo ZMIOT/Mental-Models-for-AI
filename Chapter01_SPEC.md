@@ -122,8 +122,8 @@ Dataset = AI 的人生经历。
 ## Open Questions
 
 - Coverage（经验覆盖）的图示是否采用黑白方格。
-- 是否将“为什么人类不需要 Dataset？”作为独立二级小节。
-- Dataset vs DataLoader 的 Sidebar 放在正文哪个位置。
+- Coverage 正式插图在 Phase 5 是否需要统一设计。
+- Dataset vs DataLoader 的 Sidebar 具体落在哪一页或哪一小节后。
 
 ## Ready Criteria
 
@@ -132,6 +132,9 @@ Dataset = AI 的人生经历。
 - 核心类比已确定。
 - 一句话心智模型已确定。
 - Coverage（经验覆盖）术语使用已确定。
+- Coverage ASCII 图示策略已确定。
+- Dataset vs DataLoader Sidebar 的原则位置已确定。
+- “为什么人类不需要 Dataset？”已确定为独立二级小节。
 - 本章新增术语已同步到 `GLOSSARY.md`。
 - 本章知识关系已同步到 `KNOWLEDGE_MAP.md`。
 - 章节设计遵守中文优先原则，除 Dataset、Sample、Feature、Coverage 等专用术语外，不使用不必要的英文。

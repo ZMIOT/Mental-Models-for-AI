@@ -226,3 +226,32 @@ node Scripts/github_issue_watcher.mjs watch --label needs-codex --interval 60
 - watcher 不自动运行 `codex exec`。
 - watcher 只负责发现回复并生成下一步提示词。
 - 自动执行 Codex 修改需要后续单独确认。
+
+## 2026-07-01 Issue #1 Teaching Design Review 消化报告
+
+### 完成内容
+
+- 将 Lead Author 的 Issue #1 评审发布到 GitHub Issue。
+- watcher 成功抓取 Issue #1 最新回复并生成 `codex-next-prompt.md`。
+- 更新 `Chapter01_TEACHING_DESIGN.md`。
+- 更新 `Chapter01_SPEC.md`。
+- 更新 `STATUS.md`，将 Chapter 01 状态改为 Teaching Design Revision。
+- 更新 `WEB_CHAT_BRIEF.md`、`CODEX_TASKS.md` 和 `CHANGELOG.md`。
+
+### Draft Gate 结论
+
+- 状态：Needs Revision。
+- 原因：Teaching Design 已成熟，但需要完成 Coverage 图示策略、Sidebar 位置、人类与 Dataset 小节和唯一 One-line Mental Model 的修订后，再进行 Draft Gate Review。
+
+### 已完成修订
+
+- Coverage 图示 Phase 2 使用 ASCII 黑白方格。
+- 正式插图后置到 Phase 5 Technical Review。
+- Dataset vs DataLoader Sidebar 放在 Dataset 概念建立之后。
+- “为什么人类不需要 Dataset？”作为独立二级小节。
+- Chapter 01 唯一 One-line Mental Model 固定为：“AI 从来没有见过世界，它只见过 Dataset。”
+
+### 下一步建议
+
+- 再次发起 Chapter 01 Draft Gate Review。
+- 如果下一轮评审为 Ready，再进入 Phase 3 Draft。

@@ -222,6 +222,40 @@ ChatGPT 网页端每次讨论结束后，将结果写入本文件。Codex 不需
 - “为什么人类不需要 Dataset？”作为独立二级小节，还是融入心智模型部分。
 - 是否可以进入 Phase 3 Draft。
 
+## 2026-07-01 Chapter 01 Teaching Design Review
+
+### 今天讨论了什么
+
+- 对 Chapter 01（Dataset）进行了出版级 Teaching Design Review。
+- 重点评审了 Draft Gate、Coverage 图示、Dataset/DataLoader Sidebar 和“为什么人类不需要 Dataset？”章节结构。
+
+### 已达成共识
+
+- 主案例继续采用工业机器人跨产线失效案例。
+- 第一章唯一核心心智模型固定为：“AI 从来没有见过世界，它只见过 Dataset。”
+- Coverage 图示 Phase 2 使用 ASCII 黑白方格验证教学效果，正式插图后续统一设计。
+- Dataset vs DataLoader 保留为 Sidebar，不进入正文主线。
+- Dataset vs DataLoader Sidebar 放在正文第一次建立 Dataset 概念之后。
+- “为什么人类不需要 Dataset？”调整为独立二级小节。
+
+### 修改了哪些理念
+
+- 第一章进一步强化“先建立认知，再给定义”的教学原则。
+- 图示设计与正式视觉设计分离，避免过早投入插图制作。
+- Draft Gate 明确返回 Needs Revision，而不是直接进入 Draft。
+
+### 新增想法
+
+- 将 One-line Mental Model 固定为章节设计资产。
+- Coverage 的 ASCII 图负责验证教学逻辑，正式插图负责提升阅读体验。
+- “人：生活 -> 经验 -> 世界模型”和“AI：Dataset -> 经验 -> 世界模型”可以形成镜像结构。
+
+### 待解决问题
+
+- 修改完成后再次进行 Draft Gate Review。
+- 确认 Sidebar 在正式正文中的准确落点。
+- 确认 Coverage 正式插图是否在 Phase 5 统一设计。
+
 ## 追加模板
 
 ```text

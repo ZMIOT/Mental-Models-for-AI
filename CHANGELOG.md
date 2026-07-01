@@ -119,6 +119,24 @@
 
 - 更新 `AGENT_COMMUNICATION.md`、`README.md` 和 `PROJECT_CHARTER.md`，说明轮询驱动流程。
 
+## [V0.8] - 2026-07-01
+
+### Changed
+
+- 消化 GitHub Issue #1 的 Chapter 01 Teaching Design Review。
+- 将 Draft Gate 状态记录为 Needs Revision。
+- 更新 `Chapter01_TEACHING_DESIGN.md`：
+  - Coverage 图示 Phase 2 使用 ASCII 黑白方格。
+  - 正式插图后置到 Phase 5 Technical Review。
+  - Dataset vs DataLoader Sidebar 放在 Dataset 概念建立之后。
+  - “为什么人类不需要 Dataset？”作为独立二级小节。
+  - 固定唯一 One-line Mental Model。
+- 更新 `Chapter01_SPEC.md` 和 `STATUS.md`。
+
+### Added
+
+- 新增 `Task 023` 和 `Task 024`。
+
 ## 版本记录模板
 
 ```text

@@ -23,7 +23,7 @@
 
 | 章节 | 标题 | 状态 | 下一步 |
 | --- | --- | --- | --- |
-| Chapter 01 | Dataset | Teaching Design Review | Design Review 已吸收，等待 Draft Gate 最终确认。 |
+| Chapter 01 | Dataset | Teaching Design Revision | Draft Gate Review 返回 Needs Revision，已吸收修订，等待再次评审。 |
 | Chapter 02 | Sample | Planned | 等待 Chapter 01 Spec 稳定后展开。 |
 | Chapter 03 | Feature | Planned | 等待 Chapter 02 Spec 稳定后展开。 |
 | Chapter 04 | Label | Planned | 等待 Part I 前序章节稳定后展开。 |
@@ -37,6 +37,7 @@
 - Spec Draft: 章节规格已建立，等待确认后进入教学设计。
 - Teaching Design: 教学设计中，尚未进入正文初稿。
 - Teaching Design Review: 教学设计已评审并吸收修改，等待 Draft Gate。
+- Teaching Design Revision: Draft Gate 未通过，正在或已经根据评审修订。
 - Draft Ready: 教学设计通过评审，可以进入正文初稿。
 - Draft: 初稿中。
 - Review: 等待评审。
