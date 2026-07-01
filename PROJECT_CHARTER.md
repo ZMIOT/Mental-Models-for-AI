@@ -129,6 +129,8 @@ Codex 消化并更新仓库
 - ChatGPT 负责在 Issue 中按指定格式回复。
 - 用户只需要把 Issue 链接交给 ChatGPT，或在 ChatGPT 中打开该 Issue。
 - Issue 回复不能直接进入正文，必须先经过 `WEB_CHAT_BRIEF.md`、`CODEX_TASKS.md`、`DECISIONS.md` 或对应设计文件。
+- watcher 可以轮询带 `needs-codex` 标签的 Issue，并生成下一步 Codex prompt。
+- watcher 默认不自动执行 Codex 修改；自动执行需要单独确认。
 - 具体协议见 `AGENT_COMMUNICATION.md`。
 
 ## 语言规范

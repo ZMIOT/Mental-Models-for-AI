@@ -192,3 +192,37 @@ node Scripts/github_issue_bridge.mjs fetch --issue 12
 - 当前本机尚未设置 `GITHUB_TOKEN`，所以还不能实际创建 Issue。
 - 该方案不需要 OpenAI API。
 - ChatGPT 网页端仍需要能够打开 GitHub Issue 并在其中回复，或由用户将 Issue 链接交给 ChatGPT。
+
+## 2026-07-01 GitHub Issue Watcher 报告
+
+### 完成内容
+
+- 创建 `Scripts/github_issue_watcher.mjs`。
+- 支持 `once` 模式和 `watch` 轮询模式。
+- watcher 会查找带 `needs-codex` 标签的 open Issue。
+- 发现新人工评论后，写入：
+  - `Bridge/from_chatgpt/issue-<number>-latest.md`
+  - `Bridge/from_chatgpt/codex-next-prompt.md`
+- watcher 会尽量把 Issue 标签从 `needs-codex` 切到 `codex-processing`。
+- 更新 `AGENT_COMMUNICATION.md`，定义 Issue 状态流转。
+- 新增 ADR-011、V0.7 版本记录、`Task 021` 和 `Task 022`。
+
+### 使用方式
+
+检查一次：
+
+```powershell
+node Scripts/github_issue_watcher.mjs once --label needs-codex
+```
+
+持续轮询：
+
+```powershell
+node Scripts/github_issue_watcher.mjs watch --label needs-codex --interval 60
+```
+
+### 当前安全策略
+
+- watcher 不自动运行 `codex exec`。
+- watcher 只负责发现回复并生成下一步提示词。
+- 自动执行 Codex 修改需要后续单独确认。

@@ -107,6 +107,18 @@
 - 将 GitHub Issue 中转流程写入 `PROJECT_CHARTER.md`、`README.md` 和 `CHATGPT_HANDOFF_PROMPT.md`。
 - 新增 `Task 019` 和 `Task 020`。
 
+## [V0.7] - 2026-07-01
+
+### Added
+
+- 新增 `Scripts/github_issue_watcher.mjs`，用于轮询等待 ChatGPT 的 GitHub Issue 回复。
+- 新增 Issue 标签状态流转：`needs-chatgpt -> needs-codex -> codex-processing -> done/needs-user`。
+- 新增 `Task 021` 和 `Task 022`。
+
+### Changed
+
+- 更新 `AGENT_COMMUNICATION.md`、`README.md` 和 `PROJECT_CHARTER.md`，说明轮询驱动流程。
+
 ## 版本记录模板
 
 ```text

@@ -55,9 +55,32 @@ Codex 读取并执行
 - `author-review`: 需要 ChatGPT 做作者评审。
 - `needs-chatgpt`: 等待 ChatGPT 回复。
 - `needs-codex`: 等待 Codex 消化回复。
+- `codex-processing`: Codex 已抓取回复，正在消化。
+- `done`: 本轮 Issue 已完成。
+- `needs-user`: 需要用户做最终判断。
 - `draft-gate`: 和 Draft Gate 有关。
 - `chapter-01`: Chapter 01 相关。
 - `decision`: 可能影响长期架构或教学路线。
+
+## Issue 状态流转
+
+```text
+needs-chatgpt
+↓ ChatGPT 回复
+needs-codex
+↓ watcher 抓取评论
+codex-processing
+↓ Codex 消化并提交
+done 或 needs-user
+```
+
+说明：
+
+- ChatGPT 回复 Issue 后，应将标签从 `needs-chatgpt` 改为 `needs-codex`。
+- 如果 ChatGPT 网页端无法改标签，用户或 Codex 可以手动补标签。
+- `Scripts/github_issue_watcher.mjs` 只处理带 `needs-codex` 的 open Issue。
+- watcher 抓到新评论后，会生成本地 `codex-next-prompt.md`，并尽量把 Issue 标签切换为 `codex-processing`。
+- Codex 执行完成后，再把 Issue 更新为 `done` 或 `needs-user`。
 
 ## Issue 标题规范
 
@@ -144,6 +167,35 @@ node Scripts/github_issue_bridge.mjs fetch --issue 12
 
 6. Codex 读取 `Bridge/from_chatgpt/issue-12-latest.md` 并执行。
 
+## 轮询驱动工作流
+
+如果希望 Codex 自动等待 ChatGPT 回复，使用 watcher：
+
+```powershell
+node Scripts/github_issue_watcher.mjs watch --label needs-codex --interval 60
+```
+
+只检查一次：
+
+```powershell
+node Scripts/github_issue_watcher.mjs once --label needs-codex
+```
+
+watcher 发现新回复后会写入：
+
+```text
+Bridge/from_chatgpt/issue-<number>-latest.md
+Bridge/from_chatgpt/codex-next-prompt.md
+```
+
+下一步可以让 Codex 读取 `codex-next-prompt.md` 执行。
+
+当前安全策略：
+
+- watcher 不自动运行 `codex exec`。
+- watcher 只负责“发现回复并生成下一步提示词”。
+- 自动执行 Codex 需要单独开启，避免 Issue 评论直接触发无人值守文件修改。
+
 ## 环境变量
 
 脚本需要：
@@ -161,4 +213,3 @@ GITHUB_REPOSITORY=ZMIOT/Mental-Models-for-AI
 ```
 
 如果不设置，脚本会尝试从 `git remote origin` 推断仓库。
-

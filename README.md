@@ -48,6 +48,7 @@ Codex 拉取 Issue 评论并消化到仓库
 ```powershell
 node Scripts/github_issue_bridge.mjs create --prompt Bridge/to_chatgpt/current_prompt.md --title "Author Review: Chapter 01 Draft Gate" --labels author-review,needs-chatgpt,chapter-01,draft-gate
 node Scripts/github_issue_bridge.mjs fetch --issue 12
+node Scripts/github_issue_watcher.mjs watch --label needs-codex --interval 60
 ```
 
 详见 `AGENT_COMMUNICATION.md`。

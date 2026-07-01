@@ -223,3 +223,25 @@
   - `Scripts/github_issue_bridge.mjs`
   - `.github/ISSUE_TEMPLATE/author_review.yml`
   - `CODEX_TASKS.md`
+
+## ADR-011: GitHub Issue watcher 只推进一步，不默认自动执行 Codex
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 用户希望 Codex 能轮询 GitHub Issue，一旦 ChatGPT 回复就继续推进。
+  - Issue 评论属于外部输入，可能包含错误、冲突或不适合直接执行的内容。
+  - 自动修改仓库需要安全边界。
+- 决策:
+  - watcher 负责发现 `needs-codex` Issue 的新回复。
+  - watcher 负责保存回复并生成 `codex-next-prompt.md`。
+  - watcher 不默认运行 `codex exec` 或直接修改仓库。
+  - 自动执行 Codex 需要后续单独确认安全策略。
+- 影响:
+  - 新增 `Scripts/github_issue_watcher.mjs`。
+  - Issue 状态流转增加 `codex-processing`。
+  - Codex 的实际执行仍保持可审查。
+- 相关文件:
+  - `AGENT_COMMUNICATION.md`
+  - `Scripts/github_issue_watcher.mjs`
+  - `CODEX_TASKS.md`
