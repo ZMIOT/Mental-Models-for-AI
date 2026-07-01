@@ -1,12 +1,17 @@
 # Mental Models for AI
 
-一本面向工业 3D 视觉工程师的深度学习心智模型书。
+一个长期维护的 AI 心智模型知识工程（Knowledge Repository），当前目标是写作一本面向工业 3D 视觉工程师的《Deep Learning Mental Models》。
 
-本仓库是项目的唯一事实来源。ChatGPT 负责思考、教学设计、类比、案例和评审；Codex 负责文件组织、Markdown 维护、重构、目录更新、图示占位和提交记录。
+本仓库是项目的唯一事实来源（Single Source of Truth）。项目不依赖 ChatGPT 或 Codex 的会话上下文，而是把所有重要结论沉淀到仓库文档中。
+
+ChatGPT 作为 Lead Author，负责教学设计、知识体系、心智模型、类比、工业案例和章节评审。Codex 作为 Project Maintainer，负责项目结构、Markdown 维护、术语统一、知识图谱同步、目录维护和 Git 提交。
 
 ## 协作入口
 
+- `PROJECT_CHARTER.md`: 项目最高层协作规范，定义角色、流程、文档优先级和交接格式。
 - `BOOK_BIBLE.md`: 写作宪法，定义风格、章节模板和质量标准。
+- `DECISIONS.md`: 长期架构和教学决策记录。
+- `CHANGELOG.md`: 项目版本演进历史。
 - `WEB_CHAT_BRIEF.md`: ChatGPT 网页讨论后的结构化摘要。
 - `CODEX_TASKS.md`: Codex 下一步需要执行的明确任务。
 - `CODEX_REPORT.md`: Codex 完成任务后的回写报告，供 ChatGPT 继续评审。
@@ -18,7 +23,7 @@
 1. 在 ChatGPT 网页端讨论教学思路、类比、案例和结构。
 2. 将讨论结果沉淀到 `WEB_CHAT_BRIEF.md`。
 3. 将可执行任务写入 `CODEX_TASKS.md`。
-4. Codex 读取 `BOOK_BIBLE.md`、`KNOWLEDGE_MAP.md`、`WEB_CHAT_BRIEF.md` 和 `CODEX_TASKS.md` 后修改仓库。
+4. Codex 读取 `PROJECT_CHARTER.md`、`BOOK_BIBLE.md`、`KNOWLEDGE_MAP.md`、`WEB_CHAT_BRIEF.md` 和 `CODEX_TASKS.md` 后修改仓库。
 5. Codex 更新 `STATUS.md` 和 `CODEX_REPORT.md`，并提交 commit。
 6. ChatGPT 读取仓库最新状态继续评审。
 
@@ -27,11 +32,14 @@
 ```text
 .
 ├── README.md
+├── PROJECT_CHARTER.md
 ├── BOOK_BIBLE.md
 ├── AUTHOR.md
 ├── KNOWLEDGE_MAP.md
 ├── GLOSSARY.md
 ├── CASE_LIBRARY.md
+├── DECISIONS.md
+├── CHANGELOG.md
 ├── STATUS.md
 ├── WEB_CHAT_BRIEF.md
 ├── CODEX_TASKS.md

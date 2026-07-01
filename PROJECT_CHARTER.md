@@ -1,0 +1,207 @@
+# Project Charter
+
+本文件是《Deep Learning Mental Models》知识工程的最高层协作规范。它定义项目身份、参与角色、文档优先级和固定工作流。
+
+具体写作风格、章节模板和内容质量标准由 `BOOK_BIBLE.md` 维护；本文件只规定项目如何长期协作。
+
+## 项目身份
+
+《Deep Learning Mental Models》是一个长期维护的 AI 心智模型知识工程，当前目标是写作一本面向工业 3D 视觉工程师的深度学习心智模型书。
+
+项目不追求一次性生成整本书，而是通过持续讨论、沉淀、重构、评审和版本管理，让内容逐步达到出版质量。
+
+## 唯一事实来源
+
+Git 仓库是唯一事实来源（Single Source of Truth）。
+
+- 不依赖 ChatGPT 网页会话历史。
+- 不依赖 Codex 会话历史。
+- 不依赖任何 Agent 的长期记忆。
+- 任何重要结论必须沉淀到仓库文档。
+
+## 角色定义
+
+### ChatGPT: Lead Author
+
+ChatGPT 是项目的 Lead Author，负责内容方向与教学质量。
+
+职责：
+
+- 教学设计
+- 心智模型设计
+- 类比设计
+- 工业案例设计
+- 章节结构评审
+- 知识体系设计
+- 学习路线设计
+- 输出 `WEB_CHAT_BRIEF.md` 追加内容
+- 输出 `CODEX_TASKS.md` 任务草案
+
+不负责：
+
+- Git 管理
+- 大规模文件重构
+- 批量 Markdown 修改
+- 在未沉淀到仓库的情况下改变项目方向
+
+### Codex: Project Maintainer
+
+Codex 是项目的 Project Maintainer，负责仓库维护与执行。
+
+职责：
+
+- 创建和维护项目结构
+- 维护 Markdown 文件
+- 重构章节
+- 统一术语
+- 同步知识图谱
+- 更新目录与状态
+- 维护 Mermaid 图和图示占位
+- 更新 `CODEX_REPORT.md`
+- 提交并推送 Git commit
+
+不负责：
+
+- 单方面改变写作哲学
+- 单方面决定教学主线
+- 在缺少 `WEB_CHAT_BRIEF.md` 或 `CODEX_TASKS.md` 输入时猜测重大方向
+
+### Git Repository: Source of Truth
+
+仓库负责承载长期记忆。所有参与者必须以仓库文件为准。
+
+## 文档优先级
+
+当文档之间出现冲突时，按以下顺序处理：
+
+1. `PROJECT_CHARTER.md`: 项目协作宪章和最高层流程。
+2. `BOOK_BIBLE.md`: 写作宪法、章节模板和内容质量标准。
+3. `KNOWLEDGE_MAP.md`: 知识关系和章节概念位置。
+4. `GLOSSARY.md`: 术语唯一解释。
+5. `CASE_LIBRARY.md`: 工业案例库。
+6. `STATUS.md`: 章节和项目状态。
+7. `WEB_CHAT_BRIEF.md`: ChatGPT 最新讨论沉淀。
+8. `CODEX_TASKS.md`: Codex 当前执行任务。
+9. `CODEX_REPORT.md`: Codex 执行回写。
+10. 章节正文和其他辅助材料。
+
+冲突不能静默处理。发现冲突时，必须在相关输出中说明冲突位置，并提出需要更新的文件。
+
+## 固定工作流
+
+1. ChatGPT 读取仓库入口文档。
+2. 用户与 ChatGPT 讨论教学设计、结构、类比和案例。
+3. ChatGPT 输出可追加到 `WEB_CHAT_BRIEF.md` 的摘要。
+4. ChatGPT 输出可追加到 `CODEX_TASKS.md` 的任务草案。
+5. Codex 读取 `PROJECT_CHARTER.md`、`BOOK_BIBLE.md`、`KNOWLEDGE_MAP.md`、`GLOSSARY.md`、`WEB_CHAT_BRIEF.md` 和 `CODEX_TASKS.md`。
+6. Codex 执行任务并维护相关文件。
+7. Codex 更新 `STATUS.md`、`CODEX_REPORT.md`、必要时更新 `DECISIONS.md` 和 `CHANGELOG.md`。
+8. Codex 提交并推送 Git commit。
+9. ChatGPT 读取最新仓库状态继续评审。
+
+## ChatGPT 固定输出格式
+
+每轮网页讨论结束后，ChatGPT 必须输出两部分。
+
+第一部分：`WEB_CHAT_BRIEF.md` 追加内容
+
+```text
+## YYYY-MM-DD 摘要
+
+### 今天讨论了什么
+
+-
+
+### 已达成共识
+
+-
+
+### 修改了哪些理念
+
+-
+
+### 新增想法
+
+-
+
+### 待解决问题
+
+-
+```
+
+第二部分：`CODEX_TASKS.md` 任务草案
+
+```text
+### Task NNN: 任务名称
+
+- 状态: Todo
+- 输入:
+  -
+- 目标:
+  -
+- 验收标准:
+  -
+- 注意事项:
+  -
+```
+
+任务编号可以由 ChatGPT 暂写为 `NNN`。Codex 追加到仓库时必须根据当前最大编号自动顺延。
+
+## Codex 固定输出要求
+
+Codex 执行任务时必须：
+
+- 保留既有文档边界。
+- 不把讨论记录混入决策文档。
+- 不把写作规范重复复制到多个文件。
+- 任务完成后更新 `CODEX_TASKS.md` 状态。
+- 重要架构决策写入 `DECISIONS.md`。
+- 项目版本演进写入 `CHANGELOG.md`。
+- 执行结果写入 `CODEX_REPORT.md`。
+
+## 禁止事项
+
+- 禁止依赖未沉淀到仓库的聊天上下文做长期决策。
+- 禁止在章节中引入未登记或冲突的核心术语。
+- 禁止绕过 `BOOK_BIBLE.md` 修改章节模板。
+- 禁止把日常讨论写入 `DECISIONS.md`。
+- 禁止把任务执行细节写入 `WEB_CHAT_BRIEF.md`。
+- 禁止在没有说明原因的情况下改变文档优先级。
+
+## Self Review
+
+ChatGPT 在输出交接内容前应检查：
+
+- 是否能让 Codex 不读聊天记录也能执行。
+- 是否区分了讨论结论和执行任务。
+- 是否存在与 `BOOK_BIBLE.md`、`GLOSSARY.md` 或 `KNOWLEDGE_MAP.md` 的冲突。
+- 是否把待决问题明确列出。
+
+Codex 在提交前应检查：
+
+- 是否完成任务验收标准。
+- 是否更新了相关状态文件。
+- 是否没有重复维护同一规则。
+- 是否保留了 ChatGPT 的教学意图。
+
+## Teaching Checklist
+
+章节设计进入 Codex 执行前，ChatGPT 应尽量提供：
+
+- 章节核心问题。
+- 章节心智模型。
+- 工业 3D 视觉案例。
+- 常见误解或失败案例。
+- 最小代码或实验方向。
+- 需要新增或确认的术语。
+- 需要更新的知识地图关系。
+
+## 文档冲突处理
+
+如果发现文档之间冲突：
+
+1. 明确列出冲突文件和冲突内容。
+2. 判断冲突属于协作流程、写作规范、知识关系、术语解释还是任务状态。
+3. 根据文档优先级提出修正方向。
+4. 只在任务允许时修改冲突文件；否则写入 `CODEX_REPORT.md` 等待确认。
+
