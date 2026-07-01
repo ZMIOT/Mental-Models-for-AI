@@ -7,6 +7,9 @@
 | 项目骨架 | Ready | 已建立 ChatGPT 与 Codex 的文档交接结构。 |
 | 项目协作宪章 | Ready | `PROJECT_CHARTER.md` 已建立为最高层协作规范。 |
 | 写作规范 | Draft | 初版来自协作规范，具体写作质量标准由 `BOOK_BIBLE.md` 维护。 |
+| 课程地图 | Draft | `CURRICULUM.md` 已建立分卷结构和初始章节边界。 |
+| 章节规格模板 | Ready | `Chapter_Template.md` 已建立正式章节和 Spec 模板。 |
+| 教学检查清单 | Ready | `Teaching_Checklist.md` 已建立 Phase 1 到 Phase 6 检查项。 |
 | 知识图谱 | Draft | 已建立核心链路，后续随章节迭代。 |
 | 术语表 | Draft | 已建立首批核心术语。 |
 | 案例库 | Draft | 已建立工业 3D 视觉案例种子。 |
@@ -17,13 +20,19 @@
 
 | 章节 | 标题 | 状态 | 下一步 |
 | --- | --- | --- | --- |
-| Chapter 01 | Dataset | Planned | 等待 ChatGPT 输出章节设计。 |
-| Chapter 02 | Feature | Planned | 等待 Chapter 01 稳定后展开。 |
-| Chapter 03 | Embedding | Planned | 等待知识图谱扩展。 |
+| Chapter 01 | Dataset | Spec Draft | 等待 ChatGPT 确认主案例、核心类比和教学设计。 |
+| Chapter 02 | Sample | Planned | 等待 Chapter 01 Spec 稳定后展开。 |
+| Chapter 03 | Feature | Planned | 等待 Chapter 02 Spec 稳定后展开。 |
+| Chapter 04 | Label | Planned | 等待 Part I 前序章节稳定后展开。 |
+| Chapter 05 | Distribution | Planned | 等待 Dataset 和 Sample 章节边界稳定。 |
+| Chapter 06 | Augmentation | Planned | 等待 Distribution 章节边界稳定。 |
+| Chapter 07 | Generalization | Planned | 等待 Part I 前序概念稳定。 |
 
 ## 状态定义
 
 - Planned: 已规划，未开始写作。
+- Spec Draft: 章节规格已建立，等待确认后进入教学设计。
+- Teaching Design: 教学设计中，尚未进入正文初稿。
 - Draft: 初稿中。
 - Review: 等待评审。
 - Revision: 根据评审修改中。

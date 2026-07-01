@@ -30,6 +30,24 @@
 - 将 Codex 定位为 Project Maintainer。
 - 将任务编号改为 Codex 自动递增维护。
 
+## [V0.2] - 2026-07-01
+
+### Added
+
+- 新增 `CURRICULUM.md`，定义全书课程地图、分卷结构和章节边界。
+- 新增 `Chapter01_SPEC.md`，定义 Dataset 章节规格。
+- 新增 `Chapter_Template.md`，提供正式章节和章节规格模板。
+- 新增 `Teaching_Checklist.md`，覆盖 Phase 1 到 Phase 6 的教学质量检查。
+
+### Changed
+
+- 将项目流程升级为 Curriculum-first 课程开发流程。
+- 将正式章节写作调整为 Phase 3，而不是下一步直接执行。
+- 将 `PROJECT_CHARTER.md` 文档优先级加入 `CURRICULUM.md` 和 `ChapterNN_SPEC.md`。
+- 将旧的 Chapter 01 直接写作任务标记为 Superseded。
+- 将 `KNOWLEDGE_MAP.md` 和 `STATUS.md` 同步到新的 Part I 章节顺序。
+- 将 Label、Distribution、Coverage、Augmentation 和 Generalization 加入 `GLOSSARY.md`。
+
 ## 版本记录模板
 
 ```text
@@ -51,4 +69,3 @@
 
 -
 ```
-

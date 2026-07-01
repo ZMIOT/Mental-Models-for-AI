@@ -93,3 +93,24 @@
   - `GLOSSARY.md`
   - `CASE_LIBRARY.md`
 
+## ADR-005: 采用 Curriculum-first 课程开发流程
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 如果直接写 Chapter 01，后续章节容易重复讲 Dataset、Feature、Label 等概念。
+  - 本项目本质上是在开发教材，而不只是写普通章节。
+  - 教材需要 Syllabus 和章节规格先行。
+- 决策:
+  - 正式章节写作前必须先维护 `CURRICULUM.md`。
+  - 每章正式正文前必须先创建对应 `ChapterNN_SPEC.md`。
+  - 章节开发采用 Phase 0 到 Phase 6：Curriculum、Chapter Spec、Teaching Design、Draft、Technical Review、Teaching Review、Final。
+- 影响:
+  - `CURRICULUM.md` 成为课程顺序和章节边界的权威来源。
+  - `ChapterNN_SPEC.md` 成为单章正文的前置约束。
+  - 旧的“直接写 Chapter 01”任务被取代。
+- 相关文件:
+  - `PROJECT_CHARTER.md`
+  - `CURRICULUM.md`
+  - `Chapter01_SPEC.md`
+  - `Teaching_Checklist.md`

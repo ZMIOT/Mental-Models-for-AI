@@ -87,6 +87,52 @@ ChatGPT 网页端每次讨论结束后，将结果写入本文件。Codex 不需
 - 制定 Mermaid 图、ASCII 图及正式插图的统一规范。
 - 制定未来实验代码、Notebook 与章节之间的引用规范。
 
+## 2026-07-01 课程开发流程升级摘要
+
+### 今天讨论了什么
+
+- 明确在正式写 Chapter 01 之前，还缺少课程地图（Curriculum）。
+- 讨论了为什么没有 Curriculum 会导致 Dataset、Feature、Label 等章节互相重复。
+- 提出每章正式正文之前必须先有 `ChapterNN_SPEC.md`。
+- 将项目从“写书流程”进一步升级为“教材开发流程”。
+- 确认正式章节应处于流程后段，而不是第一步。
+
+### 已达成共识
+
+- `CURRICULUM.md` 是全书课程顺序和章节边界的核心文件。
+- 正式章节写作前必须先创建并确认对应 `ChapterNN_SPEC.md`。
+- Chapter 01 只讲 Dataset，不系统展开 Feature、Label、Gradient、CNN 等后续概念。
+- 章节开发流程采用 Phase 0 到 Phase 6：
+  - Phase 0：课程设计（Curriculum）
+  - Phase 1：章节设计（Chapter Spec）
+  - Phase 2：教学设计（Teaching Design）
+  - Phase 3：初稿（Draft）
+  - Phase 4：技术审校（Technical Review）
+  - Phase 5：教学审校（Teaching Review）
+  - Phase 6：最终版（Final）
+
+### 修改了哪些理念
+
+- 将课程地图提升到比单章正文更靠前的位置。
+- 将章节正文从“下一步”改为“课程设计和章节规格之后的产物”。
+- 将 Chapter 01 的目标从“写 Dataset 正文”调整为“先定义 Dataset 章节边界”。
+- 将项目工作流升级为出版社和课程开发式流程。
+
+### 新增想法
+
+- 新增 `CURRICULUM.md`，作为全书 Syllabus。
+- 新增 `Chapter01_SPEC.md`，作为 Dataset 章节规格。
+- 新增 `Chapter_Template.md`，作为所有章节共用模板。
+- 新增 `Teaching_Checklist.md`，作为每章发布前的教学质量检查。
+- 后续每章都应拥有自己的 `ChapterNN_SPEC.md`。
+
+### 待解决问题
+
+- 确认 `CURRICULUM.md` 中 Part 和章节顺序是否稳定。
+- 确认 Chapter 01 主工业案例使用点云缺陷检测还是结构光测量异常。
+- 确认 Coverage 的中文固定译名。
+- 确认 Chapter Spec 文件长期放在仓库根目录，还是未来迁移到 `Chapters/Specs/`。
+
 ## 追加模板
 
 ```text
