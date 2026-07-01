@@ -114,3 +114,25 @@
   - `CURRICULUM.md`
   - `Chapter01_SPEC.md`
   - `Teaching_Checklist.md`
+
+## ADR-006: 采用中文优先语言策略
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 本书面向中文语境下的工业 3D 视觉工程师。
+  - 不必要的英文会增加阅读负担，也会削弱教学表达。
+  - 专用术语、代码、API 和文件名仍需要保留英文以保持准确性。
+- 决策:
+  - 正文、说明、任务、评审和模板采用中文优先。
+  - Dataset、Sample、Feature、Embedding、Loss、Transformer、DataLoader、API 等专用术语可以保留英文。
+  - 英文术语第一次进入正式内容时，应尽量给出中文解释或心智模型。
+- 影响:
+  - 章节正文和教学设计需要避免不必要的英文叙述。
+  - `GLOSSARY.md` 需要维护专用术语的稳定解释。
+  - 文件名和已有工程约定暂不强行中文化。
+- 相关文件:
+  - `PROJECT_CHARTER.md`
+  - `BOOK_BIBLE.md`
+  - `GLOSSARY.md`
+  - `Teaching_Checklist.md`

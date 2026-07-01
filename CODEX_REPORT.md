@@ -93,3 +93,21 @@ Final
 - ChatGPT 先评审 `CURRICULUM.md` 中 Part I 的章节顺序和边界。
 - ChatGPT 再确认 `Chapter01_SPEC.md` 的主案例：点云缺陷检测或结构光测量异常。
 - 只有 Chapter 01 Teaching Design 确认后，才创建正式正文 `Chapters/Chapter01_Dataset.md`。
+
+## 2026-07-01 中文优先语言规范报告
+
+### 完成内容
+
+- 在 `PROJECT_CHARTER.md` 中新增项目级语言规范。
+- 在 `BOOK_BIBLE.md` 中新增中文优先写作规则。
+- 在 `GLOSSARY.md` 中新增术语使用规则。
+- 在 `Chapter_Template.md` 和 `Teaching_Checklist.md` 中加入中文优先要求。
+- 在 `CHATGPT_HANDOFF_PROMPT.md` 中提醒 ChatGPT 网页端遵守中文优先。
+- 在 `Chapter01_SPEC.md` 的 Ready Criteria 中加入中文优先检查。
+- 在 `DECISIONS.md` 中新增 ADR-006。
+
+### 规则摘要
+
+- 正文、说明、任务和评审优先使用中文。
+- Dataset、Sample、Feature、Embedding、Loss、Transformer、DataLoader、API 等专用术语可以保留英文。
+- 文件名、代码、命令和已有工程约定暂不强行中文化。

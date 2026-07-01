@@ -10,6 +10,7 @@
 | 课程地图 | Draft | `CURRICULUM.md` 已建立分卷结构和初始章节边界。 |
 | 章节规格模板 | Ready | `Chapter_Template.md` 已建立正式章节和 Spec 模板。 |
 | 教学检查清单 | Ready | `Teaching_Checklist.md` 已建立 Phase 1 到 Phase 6 检查项。 |
+| 语言规范 | Ready | 已确立中文优先，专用术语可保留英文。 |
 | 知识图谱 | Draft | 已建立核心链路，后续随章节迭代。 |
 | 术语表 | Draft | 已建立首批核心术语。 |
 | 案例库 | Draft | 已建立工业 3D 视觉案例种子。 |

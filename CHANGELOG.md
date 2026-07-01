@@ -48,6 +48,20 @@
 - 将 `KNOWLEDGE_MAP.md` 和 `STATUS.md` 同步到新的 Part I 章节顺序。
 - 将 Label、Distribution、Coverage、Augmentation 和 Generalization 加入 `GLOSSARY.md`。
 
+## [V0.3] - 2026-07-01
+
+### Added
+
+- 在 `PROJECT_CHARTER.md` 中新增中文优先语言规范。
+- 在 `BOOK_BIBLE.md` 中新增中文优先写作规则。
+- 在 `GLOSSARY.md` 中新增术语使用规则。
+- 在 `Teaching_Checklist.md` 中新增中文优先检查项。
+
+### Changed
+
+- 更新 `CHATGPT_HANDOFF_PROMPT.md`，要求网页端 ChatGPT 遵守中文优先。
+- 更新 `Chapter01_SPEC.md`，将中文优先加入 Ready Criteria。
+
 ## 版本记录模板
 
 ```text

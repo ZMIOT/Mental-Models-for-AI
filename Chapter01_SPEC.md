@@ -135,5 +135,5 @@ Dataset = AI 的人生经历。
 - 核心类比已确定。
 - 本章新增术语已同步到 `GLOSSARY.md`。
 - 本章知识关系已同步到 `KNOWLEDGE_MAP.md`。
+- 章节设计遵守中文优先原则，除 Dataset、Sample、Feature、Coverage 等专用术语外，不使用不必要的英文。
 - Teaching Checklist 已通过。
-

@@ -39,6 +39,7 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 - 不依赖聊天历史。
 - 不依赖模型记忆。
 - 只依赖仓库文档。
+- 中文优先：能用中文表达的内容都用中文，只有专用术语、代码、API、文件名和固定缩写可以保留英文。
 - 所有术语以 GLOSSARY.md 为准。
 - 所有课程顺序和章节边界以 CURRICULUM.md 为准。
 - 所有知识关系以 KNOWLEDGE_MAP.md 为准。
