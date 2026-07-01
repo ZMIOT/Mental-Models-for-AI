@@ -21,7 +21,7 @@
 
 | 章节 | 标题 | 状态 | 下一步 |
 | --- | --- | --- | --- |
-| Chapter 01 | Dataset | Spec Draft | 等待 ChatGPT 确认主案例、核心类比和教学设计。 |
+| Chapter 01 | Dataset | Teaching Design | 已创建 `Chapter01_TEACHING_DESIGN.md`，等待评审后决定是否进入 Draft。 |
 | Chapter 02 | Sample | Planned | 等待 Chapter 01 Spec 稳定后展开。 |
 | Chapter 03 | Feature | Planned | 等待 Chapter 02 Spec 稳定后展开。 |
 | Chapter 04 | Label | Planned | 等待 Part I 前序章节稳定后展开。 |
@@ -34,6 +34,7 @@
 - Planned: 已规划，未开始写作。
 - Spec Draft: 章节规格已建立，等待确认后进入教学设计。
 - Teaching Design: 教学设计中，尚未进入正文初稿。
+- Draft Ready: 教学设计通过评审，可以进入正文初稿。
 - Draft: 初稿中。
 - Review: 等待评审。
 - Revision: 根据评审修改中。

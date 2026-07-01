@@ -62,6 +62,20 @@
 - 更新 `CHATGPT_HANDOFF_PROMPT.md`，要求网页端 ChatGPT 遵守中文优先。
 - 更新 `Chapter01_SPEC.md`，将中文优先加入 Ready Criteria。
 
+## [V0.4] - 2026-07-01
+
+### Added
+
+- 新增 `Chapter01_TEACHING_DESIGN.md`，进入 Chapter 01 Phase 2 教学设计。
+- 在 `PROJECT_CHARTER.md` 中新增 Idea -> Teaching Design -> Book Content -> Review 四层流程。
+- 在 `Teaching_Checklist.md` 中新增 Phase 2 教学设计检查项。
+- 在 `DECISIONS.md` 中新增 ADR-007。
+
+### Changed
+
+- 将 Chapter 01 状态从 Spec Draft 更新为 Teaching Design。
+- 更新 `CHATGPT_HANDOFF_PROMPT.md`，要求网页端 ChatGPT 判断内容能否进入书，而不是直接回答问题。
+
 ## 版本记录模板
 
 ```text

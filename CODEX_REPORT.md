@@ -111,3 +111,28 @@ Final
 - 正文、说明、任务和评审优先使用中文。
 - Dataset、Sample、Feature、Embedding、Loss、Transformer、DataLoader、API 等专用术语可以保留英文。
 - 文件名、代码、命令和已有工程约定暂不强行中文化。
+
+## 2026-07-01 Chapter 01 教学设计启动报告
+
+### 完成内容
+
+- 创建 `Chapter01_TEACHING_DESIGN.md`，作为 Chapter 01 的 Phase 2 教学设计蓝图。
+- 在 `PROJECT_CHARTER.md` 中加入 Idea -> Teaching Design -> Book Content -> Review 四层流程。
+- 在 `Teaching_Checklist.md` 中强化 Phase 2 检查项。
+- 更新 `CHATGPT_HANDOFF_PROMPT.md`，提醒 ChatGPT 不把临时回答直接写成正文。
+- 更新 `STATUS.md`，将 Chapter 01 状态改为 Teaching Design。
+- 新增 `Task 014`、`Task 015` 和 `Task 016`。
+- 新增 ADR-007 和 V0.4 版本记录。
+
+### Chapter 01 当前教学设计核心
+
+- 错误认知：Dataset 就是一堆图片、一堆点云，或者一个训练文件夹。
+- 核心新认知：Dataset 是 AI 对真实世界的一次采样，是 AI 全部经验的来源。
+- 一年后记忆句：AI 从来没有见过世界，它只见过 Dataset。
+- 能力目标：读者能够判断一个工业 Dataset 为什么会失败，并知道如何重新设计它。
+
+### 下一步建议
+
+- 评审 `Chapter01_TEACHING_DESIGN.md`。
+- 确认主案例、开场故事、Coverage 译名和是否加入 Dataset/DataLoader 区分小节。
+- 评审通过后，再决定是否进入 Phase 3 Draft。

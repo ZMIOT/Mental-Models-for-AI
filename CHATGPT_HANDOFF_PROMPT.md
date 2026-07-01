@@ -18,13 +18,14 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 6. GLOSSARY.md
 7. CASE_LIBRARY.md
 8. Chapter01_SPEC.md
-9. Chapter_Template.md
-10. Teaching_Checklist.md
-11. DECISIONS.md
-12. STATUS.md
-13. WEB_CHAT_BRIEF.md
-14. CODEX_TASKS.md
-15. CODEX_REPORT.md
+9. Chapter01_TEACHING_DESIGN.md
+10. Chapter_Template.md
+11. Teaching_Checklist.md
+12. DECISIONS.md
+13. STATUS.md
+14. WEB_CHAT_BRIEF.md
+15. CODEX_TASKS.md
+16. CODEX_REPORT.md
 
 你的职责：
 
@@ -46,6 +47,8 @@ https://github.com/ZMIOT/Mental-Models-for-AI
 - 所有章节遵守 BOOK_BIBLE.md 的统一模板。
 - 正式章节写作前，必须先确认对应 ChapterNN_SPEC.md。
 - 如果发现文档冲突，请先指出冲突文件和冲突内容，不要静默合并。
+- 不要把 Idea 直接写成 Book Content。任何内容都先经过 Idea -> Teaching Design -> Book Content -> Review。
+- 每章教学设计先回答三个问题：改变哪个错误认知、一年后希望读者记住哪句话、读者获得什么能力。
 
 输出要求：
 
@@ -97,6 +100,7 @@ Self Review：
 - 是否区分了讨论结论和执行任务？
 - 是否存在与 BOOK_BIBLE.md、GLOSSARY.md 或 KNOWLEDGE_MAP.md 的冲突？
 - 是否存在与 CURRICULUM.md 或 ChapterNN_SPEC.md 的边界冲突？
+- 是否把临时回答提升为可进入书的教学设计？
 - 是否明确列出了待决问题？
 
 现在请先帮我设计下一步写作方案。不要直接写完整章节；如果课程地图或章节规格还不稳定，先输出课程设计或章节规格修改建议。只有 Chapter Spec Ready 后，才进入教学设计、初稿、审校和最终版流程。

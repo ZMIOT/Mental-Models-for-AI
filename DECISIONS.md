@@ -136,3 +136,26 @@
   - `BOOK_BIBLE.md`
   - `GLOSSARY.md`
   - `Teaching_Checklist.md`
+
+## ADR-007: 采用作者式四层内容流程
+
+- 日期: 2026-07-01
+- 状态: Accepted
+- 背景:
+  - 项目已经进入创作阶段，但不能把即时回答直接写进书。
+  - 本书目标是长期质量，而不是短期问答。
+  - 每章需要先设计读者认知变化，再写正文。
+- 决策:
+  - 所有内容必须经过 Idea -> Teaching Design -> Book Content -> Review。
+  - 禁止从 Idea 直接进入 Book Content。
+  - 每章 Teaching Design 必须回答三个问题：改变哪个错误认知、一年后希望读者记住哪句话、读者获得什么能力。
+  - 每章教学设计按 Chapter Goal、Misconception、Mental Model、Story、Teaching Flow、Experiment、Draft 推进。
+- 影响:
+  - Chapter 01 先创建 `Chapter01_TEACHING_DESIGN.md`，不直接创建正文。
+  - `Teaching_Checklist.md` 增加 Phase 2 检查项。
+  - ChatGPT 网页端讨论需要优先判断内容能否进入书。
+- 相关文件:
+  - `PROJECT_CHARTER.md`
+  - `Chapter01_TEACHING_DESIGN.md`
+  - `Teaching_Checklist.md`
+  - `CHATGPT_HANDOFF_PROMPT.md`

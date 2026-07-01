@@ -45,6 +45,17 @@ Phase 5: Teaching Review
 Phase 6: Final
 ```
 
+内容进入正式章节前必须经过四层：
+
+```text
+Idea
+Teaching Design
+Book Content
+Review
+```
+
+每章先设计，再写正文。Chapter 01 当前进入 Phase 2：Teaching Design。
+
 ## 目录结构
 
 ```text
@@ -54,6 +65,7 @@ Phase 6: Final
 ├── BOOK_BIBLE.md
 ├── CURRICULUM.md
 ├── Chapter01_SPEC.md
+├── Chapter01_TEACHING_DESIGN.md
 ├── Chapter_Template.md
 ├── Teaching_Checklist.md
 ├── AUTHOR.md

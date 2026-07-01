@@ -128,6 +128,38 @@ Codex 是项目的 Project Maintainer，负责仓库维护与执行。
 | Phase 5 | 教学审校（Teaching Review） | Review notes / revisions | 检查教学顺序、类比、案例和读者体验。 |
 | Phase 6 | 最终版（Final） | Final chapter | 达到可发布质量。 |
 
+所有内容必须先通过作者筛选。项目不追求快速回答问题，而是判断一个想法是否值得进入书。
+
+内容进入正式章节前必须经过四层：
+
+```text
+Idea
+↓
+Teaching Design
+↓
+Book Content
+↓
+Review
+```
+
+禁止从 Idea 直接进入 Book Content。
+
+每章进入 Phase 2 时，必须先回答三个问题：
+
+1. 这一章最想改变读者的哪个错误认知？
+2. 如果读者一年后只记住一句话，希望是哪一句？
+3. 这一章结束后，读者应该获得什么能力？
+
+每章教学设计固定顺序：
+
+1. Chapter Goal
+2. Misconception
+3. Mental Model
+4. Story
+5. Teaching Flow
+6. Experiment
+7. Draft
+
 工作流顺序：
 
 ```text
@@ -211,6 +243,7 @@ Codex 执行任务时必须：
 - 不把讨论记录混入决策文档。
 - 不把写作规范重复复制到多个文件。
 - 不直接创建正式章节，除非对应 `ChapterNN_SPEC.md` 已经 Ready。
+- 不把临时回答直接写成正文；必须先进入 Teaching Design。
 - 任务完成后更新 `CODEX_TASKS.md` 状态。
 - 重要架构决策写入 `DECISIONS.md`。
 - 项目版本演进写入 `CHANGELOG.md`。
@@ -222,6 +255,7 @@ Codex 执行任务时必须：
 - 禁止在章节中引入未登记或冲突的核心术语。
 - 禁止绕过 `BOOK_BIBLE.md` 修改章节模板。
 - 禁止绕过 `CURRICULUM.md` 和 `ChapterNN_SPEC.md` 直接写正式章节。
+- 禁止从 Idea 直接进入 Book Content。
 - 禁止在可清楚使用中文表达时大量使用英文叙述。
 - 禁止把日常讨论写入 `DECISIONS.md`。
 - 禁止把任务执行细节写入 `WEB_CHAT_BRIEF.md`。
@@ -250,6 +284,9 @@ Codex 在提交前应检查：
 
 - 章节在 `CURRICULUM.md` 中的位置。
 - 对应 `ChapterNN_SPEC.md` 的边界。
+- 本章要改变的错误认知。
+- 本章一年后仍希望读者记住的一句话。
+- 本章结束后读者获得的能力。
 - 章节核心问题。
 - 章节心智模型。
 - 工业 3D 视觉案例。

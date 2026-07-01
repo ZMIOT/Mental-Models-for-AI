@@ -133,6 +133,52 @@ ChatGPT 网页端每次讨论结束后，将结果写入本文件。Codex 不需
 - 确认 Coverage 的中文固定译名。
 - 确认 Chapter Spec 文件长期放在仓库根目录，还是未来迁移到 `Chapters/Specs/`。
 
+## 2026-07-01 Chapter 01 教学设计启动摘要
+
+### 今天讨论了什么
+
+- 明确项目从这一刻进入真正创作阶段，但不是直接写 Chapter 01 正文。
+- 明确作者角色不是回答问题，而是维护这本书。
+- 提出任何内容都必须经过 Idea -> Teaching Design -> Book Content -> Review。
+- 提出 Chapter 01 先进入 Phase 2：Teaching Design。
+- 明确每章开始写之前必须回答三个问题：改变哪个错误认知、一年后希望读者记住哪句话、读者获得什么能力。
+
+### 已达成共识
+
+- 以后所有讨论都围绕“它能不能进入书”。
+- 不再把临时解释直接写成正文。
+- Chapter 01 的核心错误认知是：Dataset 就是一堆图片或一个训练文件夹。
+- Chapter 01 要建立的新认知是：Dataset 是 AI 对世界的一种采样，是 AI 全部经验的来源。
+- Chapter 01 的核心记忆句是：AI 从来没有见过世界，它只见过 Dataset。
+- Chapter 01 的能力目标是：读者能够判断一个工业 Dataset 为什么会失败，并知道应该如何重新设计它。
+
+### 修改了哪些理念
+
+- 将项目从“准备阶段”推进到“创作阶段”。
+- 将“写 Chapter 01”改为“设计 Chapter 01”。
+- 将内容生产流程从 Idea -> Book 改为 Idea -> Teaching Design -> Book Content -> Review。
+- 将章节目标从知识解释升级为认知改变和能力获得。
+
+### 新增想法
+
+- 每章教学设计固定顺序：
+  - Chapter Goal
+  - Misconception
+  - Mental Model
+  - Story
+  - Teaching Flow
+  - Experiment
+  - Draft
+- Chapter 01 可以从工业现场故事开始，而不是从定义开始。
+- 候选开场故事：机器人在现场突然抓错工件，因为 Dataset 中没有见过当天的工况。
+
+### 待解决问题
+
+- Chapter 01 主案例最终选择点云缺陷检测，还是结构光测量异常。
+- 开场故事是否采用“机器人抓错工件”。
+- Coverage 是否需要固定中文译名。
+- 是否将 Dataset 和 DataLoader 的区别作为 Chapter 01 的小节。
+
 ## 追加模板
 
 ```text
